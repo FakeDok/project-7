@@ -1,0 +1,139 @@
+.about{
+    padding-top: 60px;
+    text-align: start;
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &__left{
+        width: 50%;
+    }
+    &__iphone{
+        background-image: url(../img/about-us-iphone.png);
+        width: 805px;
+        height: 672px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        right: 300;
+    }
+    &__subtitle{
+        padding-top: 30px;
+    }
+    &__bottom{
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+    }
+    &__button{
+        background: none;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 40px;
+        margin-right: 20px;
+        display: flex;
+        &:hover{
+            background-color: #267df4;
+            color: white;
+            transition: 1.5s;
+            cursor: pointer;
+        }
+    }
+    &__arrow{
+        padding-left: 30px;
+    }
+    &__learn-more{
+        padding: 15px 20px;
+        border-radius: 30px;
+        &:hover{
+            background-color: #267df4;
+            color: white;
+            transition: 1.5s;
+            cursor: pointer;
+        }
+    }
+}
+@media(max-width:1200px){
+    .about{
+        &__iphone{
+            width: 705px;
+            height: 572px;
+        }
+    }
+}
+@media(max-width:1000px){
+    .about{
+        &__iphone{
+            width: 655px;
+            height: 522px;
+        }
+    }
+}
+@media(max-width:900px){
+    .about{
+        &__button{
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        &__arrow{
+            padding-left: 15px;
+        }
+        &__learn-more{
+            padding: 10px 15px;
+            border-radius: 30px;
+        }
+        &__iphone{
+            right: 270;
+        }
+    }
+}
+@media(max-width:768px){
+    .about{
+        &__iphone{
+            width: 605px;
+            height: 472px;
+            right: 250;
+        }
+    }
+}
+@media(max-width:695px){
+    .about{
+        &__iphone{
+            width: 505px;
+            height: 372px;
+            right: 200;
+        }
+    }
+}
+@media(max-width:605px){
+    .about{
+        text-align: center;
+        &__container{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__iphone{
+            width: 356px;
+            height: 323px;
+            right: 0;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media(max-width:426px){
+    .about{
+        &__iphone{
+            height: 243;
+        }
+    }
+}

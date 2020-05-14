@@ -1,0 +1,45 @@
+.home{
+    padding-top: 100px;
+    background-image: url(../img/home-back.png);
+    background-size: cover;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        display: flex;
+        border: 1px solid rgba(38, 39, 45, 0.1);
+        border-radius: 25px;
+        background: none;
+        padding: 10px;
+        margin-top: 40px;
+        &:hover{
+            background-color: #267df4;
+            color: white;
+            cursor: pointer;
+            transition: 1s;
+        }
+    }
+    &__play{
+        padding-left: 10px;
+    }
+    &__image{
+        background-image: url(../img/home-iphone.png);
+        width: 369px;
+        height: 390px;
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media(max-width:426px){
+    .home{
+
+    &__image{
+        width: 169px;
+        height: 190px;
+        margin-top: 60px;
+    }
+}
+}

@@ -1,0 +1,94 @@
+.customers{
+    padding: 60px 0px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__carousel{
+        display: flex;
+        flex-basis: 110px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        overflow: hidden;
+        justify-content: center;
+        margin: 30 0px;
+        
+    }
+    &__all-people{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__people{
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1.5s;
+    }
+    &__foto{
+        width: 110px;
+        height: 110px;
+        background-size: cover;
+        margin: 10 0px;
+    }
+    &__subtitle{
+        padding: 50px;
+    }
+    &__all-stars{
+        display: flex;
+        padding-bottom: 50px;
+    }
+    &__bottom{
+        color: #26272d;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    &__star{
+        color: #f2bc3b;
+        padding: 30px 5px;
+        opacity: 0.5;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            transition: 1s;
+            font-size: 25px;
+        }
+    }
+    &__arrow{
+        font-size: 40px;
+        opacity: 0.3;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            transition: 1s;
+            color: #267df4;
+        }
+    }
+    &__women-glass{
+        background-image: url(../img/glass-women.png);
+    }
+    &__men{
+        background-image: url(../img/blue-man.png);
+    }
+    &__women{
+        background-image: url(../img/women.png);
+    }
+}
+@media(max-width:425px){
+    .customers{
+        }
+}

@@ -1,0 +1,99 @@
+.header{
+    position: fixed;
+    width: 100%;
+    padding-top: 60px;
+    z-index: 1;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__menu_off{
+        display: none;
+    }
+    &__center{
+        background-image: url(../img/header-logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 13px;
+    }
+    &__menu-icon{
+        background-image: url(../img/burger-icon.png);
+        width: 20px;
+        height: 15px;
+        background-size: cover;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    &__new{
+        font-size: 20px;
+    }
+    &__logo-get{
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        &:hover{
+            background-color: #267df4;
+            border-radius: 21px;
+            color: white;
+            cursor: pointer;
+            transition: 1s;
+        }
+    }
+    &__apple-logo{
+        padding-right: 5px;
+    }
+    &_clarity{
+        opacity: 0.7;
+        padding-right: 15px;
+        &:hover{
+            opacity: 1;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+}
+@media(max-width:720px){
+    .header{
+        &__left{
+            flex-direction: column;
+        }
+        &__menu-icon{
+            align-self: flex-start;
+        }
+        &__menu{
+            flex-direction: column;
+            text-align: start;
+            padding-top: 10px;
+        }
+    }
+}
+@media(max-width:570px){
+    .header{
+        &__logo-get{
+            flex-direction: column;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+        }
+        &_clarity{
+            padding: 10px 0px;
+        }
+        &__center{
+            width: 120px;
+        }
+    }
+}

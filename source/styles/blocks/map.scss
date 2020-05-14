@@ -1,0 +1,125 @@
+.map{
+    padding: 60px 0px 100px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+    &__subtitle{
+        padding-top: 30px;
+    }
+    &__partners{
+        padding-top: 100px;
+        color: #26272d;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    &__logo{
+        display: flex;
+        padding-top: 60px;
+    }
+    &__logo_size{
+        width: 138px;
+        height: 35px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 30px;
+    }
+    &__dropbox{
+        background-image: url(../img/dropbox-logo.svg);
+    }
+    &__evernote{
+        background-image: url(../img/evernote-logo.svg);
+    }
+    &__world{
+        background-image: url(../img/map.png);
+        width: 996px;
+        height: 498px;
+        background-size: cover;
+    }
+}
+@media(max-width:1200px){
+    .map{
+    &__world{
+        width: 866px;
+        height: 458px;
+    }
+    }
+}
+@media(max-width:1024px){
+    .map{
+        &__world{
+            width: 820px;
+            height: 398px;
+        }
+    }
+}
+@media(max-width:870px){
+    .map{
+        &__world{
+            width: 720px;
+            height: 358px;
+        }
+    }
+}
+@media(max-width:768px){
+    .map{
+        &__world{
+            width: 624px;
+            height: 298px;
+        }
+    }
+}
+@media(max-width:685px){
+    .map{
+        &__world{
+            width: 524px;
+            height: 260px;
+        }
+    }
+}
+@media(max-width:585px){
+    .map{
+        &__world{
+            width: 462px;
+            height: 230px;
+        }
+        &__logo_size{
+            width: 110px;
+        }
+    }
+}
+@media(max-width:495px){
+    .map{
+        &__world{
+            width: 400px;
+            height: 200px;
+        }
+    }
+}
+@media(max-width:426px){
+    .map{
+        &__world{
+            width: 255px;
+            height: 120px;
+        }
+        &__logo{
+            flex-direction: column;
+        }
+        &__logo_size{
+            width: 90px;
+            margin-top: 20px;
+            margin-right: 0px;
+        }
+    }
+}
